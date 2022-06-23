@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <script src="index.js"></script>
+    <style>
+.main{
+    border: solid blue;
+margin-top: 100px;
+    position: relative;
+    background-color: yellow;
+    
+}
+.step{
+    
+    background-color: white;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 200px;
+    margin: 170px 0 0 180px;
+    /* animation:move 0.50s linear infinite; */
+}
+.step:hover{
+    animation:move 0.50s linear infinite;
+}
+@keyframes move {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+
+#one{
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    transform: rotate(118deg);
+    background-color: blue;
+    top: -70px;
+    left: -50px;
+    border-radius: 20px;
+    
+
+}
+#two{
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    transform: rotate(240deg);
+    background-color: blue;
+    top: -70px;
+    left: 75px;
+    border-radius: 20px;
+    
+
+}
+#three{
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    transform: rotate(-5deg);
+    background-color: blue;
+    top: 25px;
+    left: 19px;
+    border-radius: 20px;
+    
+
+}
+
+button{
+
+    margin: 160px 0 0 130px;
+}
+
+  
+  
+
+
+
+    </style>
+</head>
+<body style="height: 100vh;">
+
+   <div  class="main col-lg-6 col-md-12  mx-auto col-md-12 col-sm-12">
+<div id="step" class="step mx-auto">
+    <div id="step1" class="move">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+    <div id="step" class="step mx-auto"></div>
+</div>
+
+<button  class="main col-lg-1 col-md-1 mx-auto   col-sm-1" id="on" onclick="">ON</button>
+<button  class="main col-lg-1 col-md-1 mx-auto  col-sm-1" id="off" onclick="">OFF</button>
+
+
+   </div>
+    
+</body>
+</html>
